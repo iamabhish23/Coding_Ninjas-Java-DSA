@@ -32,27 +32,23 @@ Sample Output 2:
 
 
 import java.util.Scanner;
-public class Solution {
-
-
+public class Solution
+{
 	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int i=1;
+	    while(i<=n){
+	        int j = 1;
+	        int m = i;
+	        while(j<=i){
+	            System.out.print(m);
+	            m--;
+	            j++;
+	        }
+	        System.out.println();
+	        i++;
+	    }
 		
-		/* Your class should be named Solution.
-	 	* Read input as specified in the question.
-	 	* Print output as specified in the question.
-		*/
-
-		Scanner s=new Scanner(System.in);
-   int n=s.nextInt();
-   for(int i=1; i<=n; i++)
-   {
-     for(int j=i; j>=1; j--)
-     {
-       System.out.print(j+"");
-     }
-     System.out.println();
-   }
-   s.close();
 	}
-
 }
