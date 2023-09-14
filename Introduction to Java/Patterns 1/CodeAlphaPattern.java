@@ -33,27 +33,23 @@ FFFFFF
 
 
 import java.util.Scanner;
-public class Solution {
-
+public class Solution
+{
 	public static void main(String[] args) {
-		
-		/* Your class should be named Solution.
-	 	* Read input as specified in the question.
-	 	* Print output as specified in the question.
-		*/
-
-		Scanner s=new Scanner(System.in);
-   int n=s.nextInt();
-   int i,j;
-   for(i=1; i<=n; i++)
-   {
-     for(j=1; j<=i; j++)
-     {
-       System.out.print((char) (i+64));
-     }
-     System.out.println("");
-   }
-   s.close();
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int i=1;
+	    char Alph = 65;
+	    while(i<=n){
+	        int j = 1;
+	        while(j<=i){
+	            System.out.print((char)(Alph+i-1));
+	            
+	            j++;
+	        }
+	        System.out.println();
+	        i++;
+	    }
+	    	
 	}
-
 }
