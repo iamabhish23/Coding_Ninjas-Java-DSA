@@ -14,7 +14,6 @@ Welcome to my Coding Ninjas Java DSA Course repository! This project is a compre
 - A one-stop destination for mastering DSA concepts in Java.
 - Perfect for students and developers looking to enhance their problem-solving skills.
 - Easy-to-navigate structure for quick access to specific topics.
-- Contributions and collaboration from the Coding Ninjas community.
 
 ## 🤝 Contributions:
 
