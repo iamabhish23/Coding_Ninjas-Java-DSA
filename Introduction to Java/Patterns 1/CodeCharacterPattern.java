@@ -32,29 +32,25 @@ FGHIJK
 
 
 import java.util.Scanner;
-public class Solution {
-
-
+public class Solution
+{
 	public static void main(String[] args) {
-		
-		/* Your class should be named Solution.
-	 	* Read input as specified in the question.
-	 	* Print output as specified in the question.
-		*/
-
-		Scanner s=new Scanner(System.in);
-   int n=s.nextInt();
-   int i,j;
-   for(i=1; i<=n; i++)
-   {
-     int k=i;
-     for(j=1; j<=i; j++,k++)
-     {
-       System.out.print((char) (k+64));
-     }
-     System.out.println("");
-   }
-   s.close();
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int i=1;
+	    
+	    while(i<=n){
+	        int j = 1;
+	        int d=(64+i);
+	        char Alph = (char)d;
+	        while(j<=i){
+	            System.out.print(Alph);
+	            j++;
+	            Alph++;
+	        }
+	        System.out.println();
+	        i++;
+	        
+	    }	
 	}
-
 }
