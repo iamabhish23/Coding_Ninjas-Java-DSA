@@ -37,20 +37,24 @@ ABCDEFG
 
 
 import java.util.Scanner;
-public class Solution {
+public class Solution
+{
 	public static void main(String[] args) {
-		//Your code goes here
-        Scanner s=new Scanner(System.in);
-   int n=s.nextInt();
-   int i,j;
-   for(i=n; i>=1; i--)
-   {
-     for(j=i; j<=n; j++)
-     {
-       System.out.print((char) (j+64));
-     }
-     System.out.println("");
-   }
-   s.close();
-	}
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int i=1;
+	    
+	    while(i<=n){
+	        int j = 1;
+	        int d=(65+n-i);
+	        char Alph = (char)d;
+	        while(j<=i){
+	            System.out.print(Alph);
+	            j++;
+	            Alph++;
+	        }
+	        System.out.println();
+	        i++;    
+	    }  		
+}
 }
