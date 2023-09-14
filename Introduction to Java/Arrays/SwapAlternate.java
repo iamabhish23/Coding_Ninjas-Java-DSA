@@ -39,7 +39,7 @@ public class Solution {
     public static void swapAlternate(int arr[]) {
     	//Your code goes here
         
-         int len = arr.length;
+        int len = arr.length;
         int temp = 0;
         
         if (len%2==0)
